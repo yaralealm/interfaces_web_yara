@@ -1,0 +1,68 @@
+
+
+body{
+    margin:0; 
+    background-color: ghostwhite;
+}
+
+.header{
+    background-image: url(imgs/swan-lake-ballet.jpg);
+    background-size: cover;
+    width: 100vw; /*vw - view 100% view na horizontal*/
+    height: 30vh; /*40% na vertical*/
+    padding-left: 2rem;
+    padding-top: 5rem;
+}
+
+
+
+.header > span{
+    color: ghostwhite; 
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 3.5rem;
+}
+
+.main{
+    max-width: 70%;
+    margin: auto;
+}
+
+.main > p{
+    font-size: large;
+}
+
+
+.form{
+    max-width: 70%;
+    margin: auto;
+    background-color: skyblue;
+    padding: 15px;
+}
+
+img{
+    width: 50%;
+    height: 25%;
+}
+
+a{
+    color: black;
+}
+
+a:hover{
+    color: skyblue;
+}
+.menu > ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.menu > ul > li {
+    display: inline;
+    margin-left: 300px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size:x-large;
+    font-weight: bolder;
+}
+
