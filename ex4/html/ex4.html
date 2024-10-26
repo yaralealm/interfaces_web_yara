@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultório</title>
+</head>
+<body>
+
+    <h1>Sistema de Atendimento - Consultório IFSP</h1>
+
+    <form action="">
+        <label for="npac">Insira o nome do paciente:</label> <br><br>
+        <input type="text" id="pac" name="npac" size="25px"> <br><br>
+
+        <button id="inc" onclick="document.getElementById('fila').innerHTML = incluirFila()">Incluir</button>
+        <button id="pri">Prioritário</button>
+        <button id="ate">Atendimento</button>
+
+    </form>
+
+    <br>
+
+    <h3 id="fila">FILA: </h3>
+
+    <br><br><br><br><br><br>
+
+    <h3>ATENDIMENTO: </h3>
+
+    <br>
+    <script src="../js/ex4.js"></script>
+</body>
+</html>
