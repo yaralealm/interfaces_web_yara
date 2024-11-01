@@ -3,24 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ex4.css">
     <title>Consultório</title>
 </head>
 <body>
+    <h1>Consultório - IFSP  </h1>
     <form>
-        <!-- <p>Insira o nome do paciente: </p> -->
         <form onsubmit="return false;">
          <label for="pac">Insira o nome do paciente: </label> <br><br>
         <input type="text" id="pac" size="25"> <br><br>
 
         <button type="button" onclick="document.getElementById('fila').innerHTML = incluirFila()">Incluir</button>
-        <button type="button">Prioritário</button>
-        <button type="button">Atendimento</button>
+        <button type="button" onclick="document.getElementById('fila').innerHTML = Prioritario()">Prioritário</button>
+        <button type="button" onclick="document.getElementById('atend').innerHTML = Atendimento()">Atendimento</button>
     </form>
 
     <h3>Fila</h3> 
     <p id="fila"></p>
     <br><br><br>
-    <h3 id="atend">Atendimento</h3>
+    <h3>Atendimento</h3>
+    <p id="atend"></p>
 
     <script src="ex4.js"></script>
 </body>
