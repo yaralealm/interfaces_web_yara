@@ -2,7 +2,7 @@ let tentativa = 0;
 
 function palavraAleatoria(){
     const palavras = ['polia', 'terço', 'polen', 'pauta', 'santo', 'conto', 'rolon', 'feito', 'broca', 'jaula']; 
-    const senha = palavras[Math.floor(Math.random() * 10)].toUpperCase(); 
+    const senha = palavras[Math.floor(Math.random() * palavras.length)].toUpperCase(); 
     let palavraDigitada = document.getElementById("input").value.toUpperCase(); 
 
     if (palavraDigitada.length !== 5) {
@@ -32,9 +32,10 @@ function palavraAleatoria(){
         tentativa++; 
         document.getElementById("input").value = ""; 
 
-        if(palavraDigitada === senha){
+        if(palavraDigitada.toUpperCase() === senha){
             alert("ACERTOU!"); 
             palavraAleatoria(); 
+            tentativa = 0; 
         }else if(tentativa >= 6){
             alert("PERDEU! A palavra era" + senha); 
         }
