@@ -1,0 +1,42 @@
+*{
+    text-align: center;
+}
+
+.tabela{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+}
+
+.fileira{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.cx{
+    height: 40px;
+    width: 40px;
+    background-color: lightgray;
+    display: inline-block;
+    border-radius: 15%;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.correto{
+    background-color: lightgreen;
+    color: white;
+}
+
+.presente{
+    background-color: lightgoldenrodyellow;
+    color: white;
+}
+
+.inexistente{
+    background-color: grey;
+    color: white;
+}
