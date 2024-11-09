@@ -4,13 +4,11 @@ function palavraAleatoria(){
     const palavras = ['polia', 'terço', 'polen', 'pauta', 'santo', 'conto', 'rolon', 'feito', 'broca', 'jaula']; 
     const senha = palavras[Math.floor(Math.random() * 10)].toUpperCase(); 
     let palavraDigitada = document.getElementById("input").value.toUpperCase(); 
-    // Verificar se a palavra digitada tem 5 letras
+
     if (palavraDigitada.length !== 5) {
         alert("A palavra precisa ter 5 letras!");
         return;
     }
-
-
 
     const fil = document.getElementsByClassName('fileira')[tentativa];
     const cel = fil.getElementsByClassName('cx');  
@@ -33,5 +31,12 @@ function palavraAleatoria(){
 
         tentativa++; 
         document.getElementById("input").value = ""; 
+
+        if(palavraDigitada === senha){
+            alert("ACERTOU!"); 
+            palavraAleatoria(); 
+        }else if(tentativa >= 6){
+            alert("PERDEU! A palavra era" + senha); 
+        }
         }
 
