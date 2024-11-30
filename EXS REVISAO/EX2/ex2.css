@@ -1,0 +1,18 @@
+*{
+    margin: auto;
+    max-width: 70%;
+    text-align: justify;
+}
+
+#verm{
+    background-color: rgb(240, 94, 94);
+    margin-left: 140px;
+}
+
+#az{
+    background-color: rgb(36, 178, 235);
+}
+
+#ver{
+    background-color: rgb(59, 128, 73);
+}
